@@ -287,7 +287,6 @@ CREATE TABLE `users` (
   `city` varchar(255) NOT NULL,
   `avatar` varchar(255) NOT NULL,
   `is_admin` int unsigned NOT NULL DEFAULT '0',
-  `uuid` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT '2021-10-21 16:00:00',
   `updated_at` timestamp NOT NULL DEFAULT '2021-10-21 16:00:00',
   PRIMARY KEY (`id`),
@@ -352,4 +351,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-21 17:39:36
+-- Dump completed on 2021-10-21 20:29:53
