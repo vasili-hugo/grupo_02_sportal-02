@@ -85,10 +85,33 @@ MORE OF
 - Si bien ha mejorado significativamente, seguir minimizando los tiempos de incomunicación.
 
 KEEP DOING
-- Buena onda del grupo. Los integrantes siguen mejorando la apuntería y cada tiro va más próximo al centro.
+- Buena onda del grupo. Los integrantes siguen mejorando la puntería y cada tiro va más próximo al centro.
 
 LESS OF
 - Tiempos de incomunicación algo elevados pero se han mejorado en un gran porcentaje. Seguir insistiendo en este punto.
 
 STOP DOING
 - Nada importante que comentar. El grupo se maneja muy bien por la reducción de los tiempos de incomunicación.
+
+** Retrospectiva del Sprint #5 **
+
+EN GENERAL
+- Un sprint muy laborioso ya que hubo que implementar varios cambios que parecían mas simples de lo que realmente fueron.
+- No facilitó su implementación el mayor tiempo disponible para su entrega, ya que cada integrante del equipo tuvo mas dificultades para entender lo que debe hacerse y como hacerlo dada la complejidad de la implementación del paquete Sequelize.
+
+START DOING
+- Mejorar la distribución de las tareas para que, de ser posible, no se superpongan o se demoren las que dependan de estas.
+- Este punto también ha mejorado en gran medida y solo queda la vista del carrito que se mejorará en el próximo sprint.
+
+MORE OF
+- Mejorar el aspecto visual de las vistas y aprender de este proceso contínuo de mejoramiento para las próximas que faltan.
+- Este punto se ha mejorado muchísimo ya que se efectúan reuniones periódicas por Meet.
+
+KEEP DOING
+- Buena onda del grupo. Los integrantes se han hermanado lo suficiente como para saber bien que puede hacer cada uno teniendo sus tiempos disponibles por el motivo que fuere.
+
+LESS OF
+- Tiempos de incomunicación mucho mas cortos. Seguir insistiendo en este punto.
+
+STOP DOING
+- Nada importante que comentar. El grupo se maneja muy bien.
