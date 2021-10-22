@@ -17,7 +17,7 @@ const test = {
         //,attributes: ['brand_id']
       })
       .then(function (products) {
-        
+        console.log(products[1].colors)
         res.render('test', {products}); 
         //return products;
       }).catch(function (errmsg) {

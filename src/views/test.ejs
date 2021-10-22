@@ -12,7 +12,10 @@
     <ul>
         <% for (let i=0; i< products.length; i++){ %>
             <li>
-                <%= products[i].model %>, <%= products[i].price %>, <%= products[i].brands.desc %>, <%= products[i].colors.desc %>
+                <% if(products[i].brands.desc != 'Puma'){ %>
+                    <%= products[i].model %>, <%= products[i].price %>, <%= products[i].brands.desc %>, <%= products[i].colors.desc %>
+
+                <% } %>
             </li>
 
         <% } %>
