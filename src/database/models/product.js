@@ -117,7 +117,7 @@ module.exports = (sequelize, dataTypes) => {
       foreignKey: 'color_id'
     });
 
-    Product.belongsToMany(models.Users, {
+    Product.belongsToMany(models.User, {
       as: "Product_ShoppingCart",
       through: 'shopping_cart',
       foreignKey: 'product_id',
