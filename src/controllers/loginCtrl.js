@@ -58,21 +58,10 @@ const controller = {
         }).then(usuario => {
         req.session.usuarioLogueado = usuario;
           if (req.body.recordame) {
-            res.cookie('recordame', usuario.id, {maxAge: 1000 * 60 * 60 * 60 * 24});
+            res.cookie('recordame', usuario.id, {maxAge: 1000 * 60 * 60 * 24}); // 1 semana
           }
         res.redirect ('/home');
         });
-        /* let usuarios = rwdJson.readJSON(usersJson);
-        if (usuarios) {
-          let usuarioEncontrado = usuarios.find (user => user.usuario == req.body.usuario);
-          if (usuarioEncontrado) {
-            req.session.usuarioLogueado = usuarioEncontrado;
-            if (req.body.recordame) {
-              res.cookie('recordame', usuarioEncontrado.id, {maxAge: 1000 * 60 * 60 * 60 * 24});
-            }
-          }
-        } */
-        
       }
     }
   ,
@@ -86,14 +75,13 @@ const controller = {
           oldData: req.body
         });
       } else {
-        db.Users.findOne({
+        db.User.findOne({
           where: {email: req.body.usuario}
         }).then(usuario => {
           if (usuario) {
             // Codigo para generar un token version 4 RFC4122
             let uuidStr = uuid.v4();
             // Guardar el uuidStr y el estado del usuario para su posterior verificacion
-            usuario.active = false;
             usuario.uuid = uuidStr;
             // Obtiene token
             const nombre = usuario.nombre;
@@ -121,7 +109,6 @@ const controller = {
                 }
                 return elem;
               });
-              rwdJson.writeJSON(usersJson, newUsers);
               res.send("Se ha enviado un correo a " + email);
             } else {
               res.send("No se ha podido enviar un correo a " + email);
